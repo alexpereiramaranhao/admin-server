@@ -11,7 +11,7 @@ ARG spring_application_name=$spring_application_name
 ENV spring_profiles_active homolog
 ARG spring_profiles_active=$spring_profiles_active
 
-ENV spring_cloud_config_uri http://ocb-config.ocb-config.svc:8080/
+ENV spring_cloud_config_uri http://config-server.config-server.svc:8080/
 ARG spring_cloud_config_uri=$spring_cloud_config_uri
 
 # FIM: Configuracoes Gerais Spring Cloud

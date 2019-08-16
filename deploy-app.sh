@@ -3,6 +3,7 @@
 #========================== MICROSERVICE - SPRING BOOT ADMIN =======================================
 #CONFIG-SERVER
 app_name="admin-server"
+project_name="config-server"
 #===================================================================================================
 
 # VARS
@@ -23,7 +24,7 @@ fi
 cd $workspace/$app_name; mvn clean install
 
 #3. CHANGE PROJECT (SAME BRANCH NAME)
-oc project $app_name
+oc project $project_name
 
 #4. CREATE THE BUILD
 oc new-build --binary --name=$app_name -l app=$app_name
