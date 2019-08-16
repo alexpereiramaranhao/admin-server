@@ -30,7 +30,8 @@ oc project $project_name
 oc new-build --binary --name=$app_name -l app=$app_name
 
 #5. START THE BUILD WITH WORKDIR APP
-oc start-build $app_name --from-dir="$workspace/$app_name" --follow
+#oc start-build $app_name --from-dir="$workspace/$app_name" --follow
+oc start-build $app_name --from-dir="." --follow
 
 #6. START THE CONTAINER
 oc new-app $app_name -l app=$app_name
