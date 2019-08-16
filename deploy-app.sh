@@ -21,7 +21,8 @@ fi
 
 #2. SOURCE COMPILE
 #MAVEN
-cd $workspace/$app_name; mvn clean install
+echo "cd $workspace/$app_name; mvn clean install"
+#cd $workspace/$app_name; mvn clean install
 
 #3. CHANGE PROJECT (SAME BRANCH NAME)
 oc project $project_name
